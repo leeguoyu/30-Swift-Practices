@@ -59,6 +59,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="pauseButton" destination="bkj-sa-v7u" id="JUZ-Au-FCW"/>
+                        <outlet property="playButton" destination="D2R-81-GaK" id="adb-xV-IVm"/>
+                        <outlet property="timeLabel" destination="8jJ-H2-Ur0" id="qbx-mq-oJw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
