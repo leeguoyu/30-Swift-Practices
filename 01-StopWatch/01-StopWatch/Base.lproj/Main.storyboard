@@ -23,6 +23,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2R-81-GaK">
                                         <rect key="frame" x="46" y="129" width="102" height="61"/>
                                         <state key="normal" image="play"/>
+                                        <connections>
+                                            <action selector="playButtonDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URs-aQ-Tlv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,6 +44,9 @@
                                         <state key="normal" title="Reset">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="resetButtonDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2m-Fb-e6K"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -51,6 +57,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkj-sa-v7u">
                                         <rect key="frame" x="69" y="128" width="42" height="56"/>
                                         <state key="normal" image="pause"/>
+                                        <connections>
+                                            <action selector="pauseButtonDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dmA-bN-Zhh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,6 +71,7 @@
                     <connections>
                         <outlet property="pauseButton" destination="bkj-sa-v7u" id="JUZ-Au-FCW"/>
                         <outlet property="playButton" destination="D2R-81-GaK" id="adb-xV-IVm"/>
+                        <outlet property="resetButton" destination="7pq-gF-4I1" id="LCM-zg-ygg"/>
                         <outlet property="timeLabel" destination="8jJ-H2-Ur0" id="qbx-mq-oJw"/>
                     </connections>
                 </viewController>
