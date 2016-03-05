@@ -18,3 +18,17 @@
 ####3月3号
 完成咯，简单的计时器。等以后学到数据持久化，再完善吧。顺带发现 Allen 的方法比较曲线救国，其实调用按钮的 `.enabled` 属性就好了。
 
+####3月4 & 5号
+4号是周五，所以跑去打火锅以及看了 叶问33D 午夜场。自从看过《师父》，对于这种功夫片是再也回不去了，何况威亚吊的还这么明显。
+
+今天完成了 [JakeLin](https://github.com/JakeLin/) 大神的「12生肖」，非常简单的一个demo。发现一个 Swift 2.0 已经不用的语法：
+
+```objc
+TextField.text.toInt()
+```
+Swift 2.0 里已变成了
+
+```objc
+if let year : Int = Int(yearTextField.text!){
+```
+
