@@ -3,7 +3,7 @@
 给自己立个flag：
 从2月29号开始，学习 [@Allen朝辉](http://weibo.com/ttarticle/p/show?id=2309403942494873235448)，30天每天一个Swift Demo。
 
-##01-StopWatch
+##01-StopWatch 计时器
 
 ####2月29号
 今晚本想洗完澡神清气爽地开工，结果拉了三次肚子。洗完澡才拉肚子，这是谁在诅咒我么？！能把 flag 拔了么？犹豫中……
@@ -18,6 +18,8 @@
 ####3月3号
 完成咯，简单的计时器。等以后学到数据持久化，再完善吧。顺带发现 Allen 的方法比较曲线救国，其实调用按钮的 `.enabled` 属性就好了。
 
+##02-ChineseHoroscope 12生肖
+
 ####3月4 & 5号
 4号是周五，所以跑去打火锅以及看了 叶问33D 午夜场。自从看过《师父》，对于这种功夫片是再也回不去了，何况威亚吊的还这么明显。
 
@@ -31,4 +33,9 @@ Swift 2.0 里已变成了
 ```objc
 if let year : Int = Int(yearTextField.text!){
 ```
+##03-ChoosePartner 相亲神器
+
+####3月6号
+完成了 JakeLin 的另一个 demo，熟悉了一些控件的基本用法。更主要的收获是掌握了搜索StackOverFlow的一些窍门，成功找到了另一个Swift 2里 `NSCalendarUnit` 已被废掉的用法。
+
 
