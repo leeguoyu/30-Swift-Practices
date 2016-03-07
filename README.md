@@ -38,4 +38,13 @@ if let year : Int = Int(yearTextField.text!){
 ####3月6号
 完成了 JakeLin 的另一个 demo，熟悉了一些控件的基本用法。更主要的收获是掌握了搜索StackOverFlow的一些窍门，成功找到了另一个Swift 2里 `NSCalendarUnit` 已被废掉的用法。
 
+####3月7号
+下班前尝试着安装CocoaPods。碰到了两个问题，一是一些教程里提到可以把原版下载地址换成淘宝镜像，速度会更快。淘宝镜像已换成`https`了，新地址是`https://ruby.taobao.org`。二是 El Capitan 在安装时可能会出现
+
+`ERROR: While executing gem ... (Errno::EPERM) Operation not permitted - /usr/bin/pod`
+
+的错误，这时需要把安装命令改为
+
+`sudo gem install -n /usr/local/bin cocoapods`
+
 
