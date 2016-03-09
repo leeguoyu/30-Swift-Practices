@@ -47,4 +47,10 @@ if let year : Int = Int(yearTextField.text!){
 
 `sudo gem install -n /usr/local/bin cocoapods`
 
+##04-BeautyGallery 女神相册
+
+####3月9号
+
+昨天也是赶文章破了功。今天这个项目主要是了解 `UIPickerView` 的使用以及界面间传值。学完对数组的使用更加清晰，只是目前的疑问是：row 的选择使用了switch来判断，但感觉这样写效率比较低，特别是当需要处理网络数据时，row 的数量以及选项的 title 应该都是不确定，无法写死的。有待继续学习。
+
 
