@@ -14,6 +14,7 @@
 		6385BD511C9071F3000D5C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6385BD4F1C9071F3000D5C7E /* LaunchScreen.storyboard */; };
 		6385BD591C9076C7000D5C7E /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385BD581C9076C7000D5C7E /* ViewControllerExtension.swift */; };
 		6385BD5B1C9079CA000D5C7E /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385BD5A1C9079CA000D5C7E /* GalleryViewController.swift */; };
+		6395E4431CA30680008776EE /* KoreanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395E4421CA30680008776EE /* KoreanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6385BD521C9071F3000D5C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6385BD581C9076C7000D5C7E /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		6385BD5A1C9079CA000D5C7E /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		6395E4421CA30680008776EE /* KoreanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KoreanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6385BD581C9076C7000D5C7E /* ViewControllerExtension.swift */,
 				6385BD5A1C9079CA000D5C7E /* GalleryViewController.swift */,
 				6385BD4A1C9071F3000D5C7E /* Main.storyboard */,
+				6395E4421CA30680008776EE /* KoreanViewController.swift */,
 				6385BD4D1C9071F3000D5C7E /* Assets.xcassets */,
 				6385BD4F1C9071F3000D5C7E /* LaunchScreen.storyboard */,
 				6385BD521C9071F3000D5C7E /* Info.plist */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6385BD491C9071F2000D5C7E /* ViewController.swift in Sources */,
+				6395E4431CA30680008776EE /* KoreanViewController.swift in Sources */,
 				6385BD5B1C9079CA000D5C7E /* GalleryViewController.swift in Sources */,
 				6385BD471C9071F2000D5C7E /* AppDelegate.swift in Sources */,
 				6385BD591C9076C7000D5C7E /* ViewControllerExtension.swift in Sources */,
@@ -293,6 +297,7 @@
 				6385BD571C9071F3000D5C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
