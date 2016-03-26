@@ -67,4 +67,7 @@ if let year : Int = Int(yearTextField.text!){
 
 今天给女神相册加入了 tabbar 和分享功能。用SB来做界面真的很方便。
 
+####3月26号
+
+学习了AutoLayout，原来没有想象中的那么复杂。
 

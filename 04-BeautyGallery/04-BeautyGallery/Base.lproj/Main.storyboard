@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--女神相册-->
@@ -17,17 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请选择女神" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFc-gV-v84">
-                                <rect key="frame" x="20" y="126" width="85" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择女神" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFc-gV-v84">
+                                <rect key="frame" x="20" y="84" width="335" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="bRu-34-efo"/>
+                                    <constraint firstAttribute="height" constant="21" id="gz8-c9-U7q"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bRu-34-efo"/>
+                                    </mask>
+                                </variation>
                             </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MbX-tS-DVu">
-                                <rect key="frame" x="0.0" y="165" width="375" height="216"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbX-tS-DVu">
+                                <rect key="frame" x="0.0" y="105" width="375" height="216"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCD-w7-gAD">
-                                <rect key="frame" x="172" y="422" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCD-w7-gAD">
+                                <rect key="frame" x="172" y="362" width="30" height="30"/>
                                 <state key="normal" title="确定"/>
                                 <connections>
                                     <segue destination="Doa-bX-Rof" kind="show" identifier="GoToGallery" id="Dfv-W3-yeM"/>
@@ -35,6 +45,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JFc-gV-v84" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="2iI-uU-3dG"/>
+                            <constraint firstItem="MbX-tS-DVu" firstAttribute="centerX" secondItem="QCD-w7-gAD" secondAttribute="centerX" id="5u2-gN-QpC"/>
+                            <constraint firstItem="JFc-gV-v84" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="9GI-5l-VSG"/>
+                            <constraint firstItem="MbX-tS-DVu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CUr-Ht-YBD"/>
+                            <constraint firstItem="QCD-w7-gAD" firstAttribute="top" secondItem="MbX-tS-DVu" secondAttribute="bottom" constant="41" id="J67-gL-qXD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JFc-gV-v84" secondAttribute="trailing" constant="4" id="UQ7-pi-yGg"/>
+                            <constraint firstAttribute="trailing" secondItem="MbX-tS-DVu" secondAttribute="trailing" id="cD5-ob-pB6"/>
+                            <constraint firstItem="MbX-tS-DVu" firstAttribute="top" secondItem="JFc-gV-v84" secondAttribute="bottom" id="vld-Nx-8W1"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="女神相册" id="jyz-bg-5In"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -58,10 +78,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="korean" translatesAutoresizingMaskIntoConstraints="NO" id="OVa-dz-QMd">
-                                <rect key="frame" x="27" y="79" width="320" height="568"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="korean" translatesAutoresizingMaskIntoConstraints="NO" id="OVa-dz-QMd">
+                                <rect key="frame" x="27" y="79" width="320" height="524"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJR-IN-keL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJR-IN-keL">
                                 <rect key="frame" x="12" y="28" width="30" height="30"/>
                                 <state key="normal" title="返回"/>
                                 <connections>
@@ -70,6 +90,13 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MJR-IN-keL" firstAttribute="leading" secondItem="4TL-6Q-FyN" secondAttribute="leadingMargin" constant="-4" id="0GY-yn-J9N"/>
+                            <constraint firstItem="OVa-dz-QMd" firstAttribute="centerX" secondItem="4TL-6Q-FyN" secondAttribute="centerX" id="5cw-Av-YzK"/>
+                            <constraint firstItem="SHD-bs-WO8" firstAttribute="top" secondItem="MJR-IN-keL" secondAttribute="bottom" constant="6" id="MGa-vR-rGt"/>
+                            <constraint firstItem="OVa-dz-QMd" firstAttribute="top" secondItem="SHD-bs-WO8" secondAttribute="bottom" constant="15" id="VDn-sG-gPP"/>
+                            <constraint firstItem="cFP-MW-5yH" firstAttribute="top" secondItem="OVa-dz-QMd" secondAttribute="bottom" constant="15" id="y9i-Gu-iXj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hYw-Xe-c7s">
                         <barButtonItem key="rightBarButtonItem" title="分享" id="KBv-PV-bKr">
@@ -120,11 +147,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="japanese" translatesAutoresizingMaskIntoConstraints="NO" id="qsk-Rz-3jy">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="625"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="japanese" translatesAutoresizingMaskIntoConstraints="NO" id="qsk-Rz-3jy">
+                                <rect key="frame" x="15" y="15" width="345" height="588"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qsk-Rz-3jy" secondAttribute="trailing" constant="15" id="UFL-CW-FVQ"/>
+                            <constraint firstItem="ecC-13-6d6" firstAttribute="top" secondItem="qsk-Rz-3jy" secondAttribute="bottom" constant="15" id="Uh4-MY-J9o"/>
+                            <constraint firstItem="qsk-Rz-3jy" firstAttribute="leading" secondItem="OTB-tJ-AOf" secondAttribute="leading" constant="15" id="c1V-Zq-LLc"/>
+                            <constraint firstItem="qsk-Rz-3jy" firstAttribute="top" secondItem="OTB-tJ-AOf" secondAttribute="top" constant="15" id="quI-ZR-G7p"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="qsk-Rz-3jy" secondAttribute="bottom" constant="15" id="zgU-x5-swk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zgU-x5-swk"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="日本" image="geisha" id="TLb-Tz-wWY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -145,24 +184,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="korean" translatesAutoresizingMaskIntoConstraints="NO" id="ciI-68-Wnn">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="korean" translatesAutoresizingMaskIntoConstraints="NO" id="ciI-68-Wnn">
                                 <rect key="frame" x="44" y="20" width="286" height="494"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwG-Bp-Yrx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwG-Bp-Yrx">
                                 <rect key="frame" x="44" y="543" width="50" height="50"/>
                                 <state key="normal" backgroundImage="facebook"/>
                                 <connections>
                                     <action selector="facebookButtonDidClick:" destination="atM-1K-jZA" eventType="touchUpInside" id="sgh-rN-aam"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcG-vE-ZxZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcG-vE-ZxZ">
                                 <rect key="frame" x="162" y="543" width="50" height="50"/>
                                 <state key="normal" backgroundImage="twitter"/>
                                 <connections>
                                     <action selector="twitterButtonDidClick:" destination="atM-1K-jZA" eventType="touchUpInside" id="gbJ-3b-bXk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QJ-EB-UZ7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QJ-EB-UZ7">
                                 <rect key="frame" x="280" y="543" width="50" height="50"/>
                                 <state key="normal" backgroundImage="weibo"/>
                                 <connections>
@@ -171,9 +210,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ciI-68-Wnn" firstAttribute="top" secondItem="vp3-dW-d2i" secondAttribute="bottom" id="DsT-gN-ks4"/>
+                            <constraint firstItem="XwG-Bp-Yrx" firstAttribute="top" secondItem="tcG-vE-ZxZ" secondAttribute="top" id="H9L-cr-hzf"/>
+                            <constraint firstItem="tcG-vE-ZxZ" firstAttribute="top" secondItem="6QJ-EB-UZ7" secondAttribute="top" id="SfW-81-OX9"/>
+                            <constraint firstItem="ciI-68-Wnn" firstAttribute="leading" secondItem="qhm-IP-cuw" secondAttribute="leadingMargin" constant="28" id="VJf-p8-gLe"/>
+                            <constraint firstItem="ciI-68-Wnn" firstAttribute="leading" secondItem="XwG-Bp-Yrx" secondAttribute="leading" id="YdR-Fm-oOG"/>
+                            <constraint firstItem="ciI-68-Wnn" firstAttribute="trailing" secondItem="6QJ-EB-UZ7" secondAttribute="trailing" id="YgR-ra-NCq"/>
+                            <constraint firstItem="ciI-68-Wnn" firstAttribute="centerX" secondItem="tcG-vE-ZxZ" secondAttribute="centerX" id="bXB-oW-XPh"/>
+                            <constraint firstItem="XwG-Bp-Yrx" firstAttribute="bottom" secondItem="tcG-vE-ZxZ" secondAttribute="bottom" id="gji-g9-vKH"/>
+                            <constraint firstItem="ciI-68-Wnn" firstAttribute="centerX" secondItem="qhm-IP-cuw" secondAttribute="centerX" id="njr-RO-bEa"/>
+                            <constraint firstItem="YA1-v7-HF4" firstAttribute="top" secondItem="XwG-Bp-Yrx" secondAttribute="bottom" constant="25" id="ns7-wl-ekB"/>
+                            <constraint firstItem="XwG-Bp-Yrx" firstAttribute="top" secondItem="ciI-68-Wnn" secondAttribute="bottom" constant="29" id="qo1-tv-0wf"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="韩国" image="origami" id="8fc-Cb-qxa"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="koreanImage" destination="ciI-68-Wnn" id="ZW6-8e-Rag"/>
                     </connections>
