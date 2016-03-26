@@ -71,3 +71,13 @@ if let year : Int = Int(yearTextField.text!){
 
 学习了AutoLayout，原来没有想象中的那么复杂。
 
+##05-ToDo
+
+####3月26号
+
+创建了能初步显示图标、标题、日期的ToDo，学习了：
+
+1. 创建数据Model
+2. 自定义cell
+3. 设置`dateFormatter`
+
