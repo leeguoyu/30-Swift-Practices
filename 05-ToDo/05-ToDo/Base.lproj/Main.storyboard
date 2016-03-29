@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pWW-2J-IQm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="JbN-WR-41H">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="todoCell" rowHeight="80" id="oPN-iw-ozE">
-                                <rect key="frame" x="0.0" y="28" width="320" height="80"/>
+                                <rect key="frame" x="0.0" y="92" width="320" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oPN-iw-ozE" id="DJ8-Z4-7oO">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
@@ -45,13 +45,100 @@
                             <outlet property="delegate" destination="pWW-2J-IQm" id="R7d-yd-He7"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="cYZ-JY-uwY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XXa-lL-gJ6">
+                            <connections>
+                                <segue destination="SO8-4W-xjg" kind="push" id="Jsy-1r-i4v"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAg-PE-4gq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="345"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SLb-xF-3hV">
+            <objects>
+                <viewController id="SO8-4W-xjg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KfU-JT-a6k"/>
+                        <viewControllerLayoutGuide type="bottom" id="bJd-EN-nma"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Lq-Qe-7TZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yta-rJ-R1m">
+                                <rect key="frame" x="20" y="86" width="50" height="50"/>
+                                <state key="normal" backgroundImage="child"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6Y-z1-D3D">
+                                <rect key="frame" x="94" y="86" width="50" height="50"/>
+                                <state key="normal" backgroundImage="phone"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="it5-lH-QLh">
+                                <rect key="frame" x="168" y="86" width="50" height="50"/>
+                                <state key="normal" backgroundImage="shopping-cart"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVh-3V-Sbn">
+                                <rect key="frame" x="242" y="86" width="50" height="50"/>
+                                <state key="normal" backgroundImage="travel"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="任务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCY-vc-tkG">
+                                <rect key="frame" x="20" y="163" width="34" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UfI-uu-9Q0">
+                                <rect key="frame" x="62" y="157" width="230" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ti6-8p-7LC">
+                                <rect key="frame" x="0.0" y="203" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="480702615.20826602">
+                                    <!--2016-03-26 16:30:15 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3z-gh-WpG">
+                                <rect key="frame" x="145" y="451" width="30" height="30"/>
+                                <state key="normal" title="确定"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zyn-zM-xsk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3P-4G-vSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="345"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="67j-kQ-Slm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JbN-WR-41H" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="53s-c9-eab">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pWW-2J-IQm" kind="relationship" relationship="rootViewController" id="hSm-e3-KVQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAc-zV-iV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="176" y="345"/>
         </scene>
     </scenes>
     <resources>
+        <image name="child" width="50" height="50"/>
         <image name="child-selected" width="50" height="50"/>
+        <image name="phone" width="50" height="50"/>
+        <image name="shopping-cart" width="50" height="50"/>
+        <image name="travel" width="50" height="50"/>
     </resources>
 </document>

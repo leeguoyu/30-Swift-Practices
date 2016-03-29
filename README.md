@@ -81,3 +81,8 @@ if let year : Int = Int(yearTextField.text!){
 2. 自定义cell
 3. 设置`dateFormatter`
 
+####3月29号
+
+有些真实的项目得先弄完，所以近期用回OC。Swift学习可能得暂停了。
+项目在隔壁，所以还是有在学习没有偷懒的，嗯！
+

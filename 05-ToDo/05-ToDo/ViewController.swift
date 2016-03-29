@@ -23,8 +23,12 @@ class ViewController: UITableViewController{
         super.viewDidLoad()
         
         todos = [TodoModel(id: "1", image: "child-selected", title: "去游乐场", date: dateFromString("2016-03-25")!), TodoModel(id: "2", image: "shopping-cart-selected", title: "去购物", date: dateFromString("2016-04-25")!), TodoModel(id: "3", image: "phone-selected", title: "打电话", date: dateFromString("2016-05-25")!), TodoModel(id: "4", image: "travel-selected", title: "去旅行", date: dateFromString("2016-05-25")!)]
+        
+        //Edit按钮
+        navigationItem.leftBarButtonItem = editButtonItem()
 
     }
+    
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todos.count
@@ -53,6 +57,22 @@ class ViewController: UITableViewController{
         date.text = dateFormatter.stringFromDate(todo.date)
         
         return cell
+    }
+    
+    //删除单元格
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete{
+            todos.removeAtIndex(indexPath.row)
+//            self.tableView.reloadData()
+            //动画
+            self.tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
+    }
+    
+    //左上角Edit按钮事件（不能用true来做布尔值）
+    override func setEditing(editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        self.tableView.setEditing(editing, animated: animated)
     }
 
 }
