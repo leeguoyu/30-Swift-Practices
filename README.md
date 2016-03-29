@@ -83,6 +83,7 @@ if let year : Int = Int(yearTextField.text!){
 
 ####3月29号
 
-有些真实的项目得先弄完，所以近期用回OC。Swift学习可能得暂停了。
-项目在隔壁，所以还是有在学习没有偷懒的，嗯！
+本来想说因为有一个完整的项目要做，估计得花多点时间在 OC 那边，Swift 得暂停，但没想到已经开始有人在 star 了……所以，我还是会争取边 OC 边 Swift 的！！！
+
+OC 项目是做这个：https://github.com/leeguoyu/BaiSiBuDeJie
 
